@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function pass() {
+        let a = document.getElementById('password').value;
+        if (a.length <= 8) {
+            alert("Password should be 8 characters long & it should contain at lest one capital laetter, a number and special characters and small letters");
+        }
+        else{
+            document.write("Welcome");
+        }
+    }
+</script>
+
+<body>
+    <form action="pass">
+        <label for="pass">Password</label>
+        <input type="password" name="ps" id="password" pattern="[a-zA-Z]{1,10}[1-100]{1,10}['@#$%!&*']{1,2}" required>
+        <input type="button" value="Submit" onclick="pass()">
+    </form>
+</body>
+
+</html>

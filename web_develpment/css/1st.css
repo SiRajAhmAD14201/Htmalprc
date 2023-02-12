@@ -1,0 +1,22 @@
+form{text-align: center;
+    background-image: url("E:\web_develpment\image\website.jpg");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+h3{
+    font-size: xx-large;
+    font-family: Segoe UI;
+    color:white;
+    text-align: center;
+}
+body{background-color:rgb(16, 157, 101);
+   
+    text-align: center;
+}
+fieldset{border: coral;
+    border-width: 233px;
+    padding: auto;
+}
+*{
+    text-align: center;
+}

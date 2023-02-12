@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> billing system</title>
+    <linkrel="stylesheet"type="text/css"href="billing.css">
+</head>
+<body>
+    <divclass="container">
+				<h1>MedicalBillingSystem</h1>
+				<divclass="table">
+					<table>
+						<tr>
+							<thclass="th1">S.No</th>
+							<th>Item</th>
+							<th>UnitCost(<i>Rs.</i>)</th>
+							<th>Quantity</th>
+							<thclass="th2">Cost(<i>Rs.</i>)</th>
+						</tr>
+						
+					
+						
+						
+						<tr>
+							<td>1</td>
+							<td>Erithramycin100mg</td>
+							<td>58</td>
+							<td>
+								<inputid="q1"type="Number"maxlength="3"onchange="calculate()">
+							</td>
+							<td>
+								<inputid="cq1"type=""maxlength="10">	
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>2</td>
+							<td>Femramycin500mg</td>
+							<td>46</td>
+							<td>
+								<inputid="q2"type="Number"maxlength="3"onchange="calculate()">
+							</td>
+							<td>
+								<inputid="cq2"type=""maxlength="10">	
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>3</td>
+							<td>Oximycin<br>2mg</td>
+							<td>1090</td>
+							<td>
+								<inputid="q3"type="Number"maxlength="3"onchange="calculate()">
+							</td>
+							<td>
+								<inputid="cq3"type=""maxlength="10">	
+							</td>
+						</tr>
+
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Total(<i>Rs.</i>)</td>
+							<td>
+								<inputid="totalcost"class="t-input"type=""maxlength="10">	
+							</td>
+						</tr>
+
+
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>GSTAt15%</td>
+							<td>
+								<inputid="gstcost"class="t-input"type=""maxlength="10">	
+							</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>GrandTotal<i>Rs.</i></td>
+							<td>
+								<inputid="grandtotal"class="t-input"type=""maxlength="10">	
+							</td>
+						</tr>
+				</table>
+			</div>
+
+					<buttonclass="button"id="checktotal"onclick="calculate()">UpgradeGrandTotal</button>
+			</div>
+
+			<scripttype="text/javascript">
+					functioncalculate(){
+						vara,b;
+						//for1
+						a=document.getElementById("q1").value;
+						varb=a*58;
+						document.getElementById("cq1").value=b;
+						//for2
+						varc,d;
+						c=document.getElementById("q2").value;
+						vard=c*49;
+						document.getElementById("cq2").value=d;
+						//for3
+						vare,f;
+						e=document.getElementById("q3").value;
+						varf=e*1090;
+						document.getElementById("cq3").value=f;
+
+						vartotal;
+						total=b+d+f;
+						document.getElementById("totalcost").value=total;
+
+						vargst;
+						gst=(15/100)*total;
+						document.getElementById("gstcost").value=gst;
+
+						vargrand;
+						grand=total+gst;
+						document.getElementById("grandtotal").value=grand;
+					}
+			</script>
+
+</body>
+</html>

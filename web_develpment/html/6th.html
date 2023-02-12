@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoping System</title>
+</head>
+<style>
+body{
+    background-color: orange;
+    text-align: center;
+    font-size: 13;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: dashed;
+    border-bottom: 1pc;
+    padding: 0%,0%,0%,0%;
+    border-color: antiquewhite;
+    color: rgb(221, 225, 216);
+    
+}
+.lagend{
+    text-align: center;
+}
+.table{
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+
+
+</style>
+
+<body>
+    
+    <h3>Customer Details </h3>
+    <form>
+        <label id="1st" >First Name:</label>
+        <input type="text"pattern="[a-z]{10}" name="1st"placeholder="Enter Your Fname"required>
+        <br><br>
+        <label>Last Name:</label>
+        <input type="text" name="lname" placeholder="Enter Your lname"required>
+        <br><br>
+        <textarea name="Address" id="" cols="30" rows="10"placeholder="Enter Your Current Address"></textarea>
+        <br><br>
+        <label>Email &nbsp;&nbsp;:&nbsp;</label>
+        <input type="email" name="email" placeholder="Enter Your Email"required>
+        <br><br>
+        <label>Password:</label>
+        <input type="password" size="30" placeholder="Enter your password" required>
+        <br><br>
+        <label>Phone No:</label>
+        <input type="number"size="11"pattern="[0-9]{11}" placeholder="Enter Your Phone No">
+        <br><br>
+        <label>Order Date:</label>
+        <br>
+        <input type="date" name="order date">
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender">Male </input>
+        <input type="radio" name="gender">Female </input>
+        <br><br>
+        <label></label>
+        <input type="submit" value="Submit">
+        <input type="reset" name="RESET" id="">
+        <br><br>
+        <label>Your Interest:</label>
+         Medecine<input type="checkbox">
+         General<input type="checkbox">
+         Bakery<input type="checkbox">
+         Fruit<input type="checkbox">
+         Vegitable<input type="checkbox">
+        <fieldset>
+            <legend>Book Your Order</legend>
+           
+
+        </fieldset>
+        <table>
+            <thead>
+                <th>dagree</th>
+                <th>Address</th>
+                <th>dept</th>
+                <th>city</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BS</td>
+                    <td>naripans</td>
+                    <td>SE</td>
+                    <td>karak</td>
+                </tr>
+            </tbody>
+
+
+
+        </table>
+       
+
+    </form>
+
+</body>
+
+</html>
